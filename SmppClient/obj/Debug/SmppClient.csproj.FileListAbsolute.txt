@@ -1,0 +1,164 @@
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\Microsoft.Practices.Unity.dll
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\prvt\mb_SMPPClient\SMPPClient-master\SMPPClient-master\SMPP\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.dll
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\YM\Build Systems\VTU\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.dll
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.pdb
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.xml
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.ServiceLocation.dll
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.dll
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.Interception.dll
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Build Systems\123\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.dll
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.pdb
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.xml
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.ServiceLocation.dll
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.dll
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.Interception.dll
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Build Systems\Rial Mobile\CorrectSubsDataApplication\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.dll
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.pdb
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.xml
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.ServiceLocation.dll
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.dll
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.Interception.dll
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Build Systems\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.dll
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.pdb
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\ArdanStudios.Common.SmppClient.xml
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.ServiceLocation.dll
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.dll
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.Unity.Interception.dll
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+I:\Rial Mobile\RMSenderVS\SMS_Interface_VS\VTUSMSInterface\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Development\Rial Mobile\RMTransVS\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+D:\Development\Rial Mobile\RMTransVS\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Rial Mobile\RMTransVS\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Rial Mobile\RMTransVS\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\Development\Rial Mobile\RMTransVS\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\Microsoft.Practices.Unity.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Development\Rial Mobile\RMTransVS\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Development\123\VS\app\SmppClient\obj\Debug\SmppClient.csprojResolveAssemblyReference.cache
+D:\Development\123\VS\app\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\app\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\app\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\app\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\app\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\Development\123\VS\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Development\123\VS\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Development\123\VS\app\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\Development\123\VS\app\SmppClient\Microsoft.Practices.Unity.dll
+D:\Development\123\VS\app\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\Development\123\VS\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Development\123\VS\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Development\123\VS\Sender\app\SmppClient\obj\Debug\SmppClient.csprojAssemblyReference.cache
+D:\Development\123\VS\Sender\app\SmppClient\obj\Debug\SmppClient.csproj.CoreCompileInputs.cache
+D:\Development\123\VS\Sender\app\SmppClient\obj\Debug\SmppClient.csproj.CopyComplete
+D:\Development\123\VS\Sender\app\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\Sender\app\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\Sender\app\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\Sender\app\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\Sender\app\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\Development\123\VS\Sender\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Development\123\VS\Sender\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Development\123\VS\Sender\app\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\Development\123\VS\Sender\app\SmppClient\Microsoft.Practices.Unity.dll
+D:\Development\123\VS\Sender\app\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\Development\123\VS\Sender\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Development\123\VS\Sender\app\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Debug\SmppClient.csprojAssemblyReference.cache
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Debug\SmppClient.csproj.CoreCompileInputs.cache
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Debug\SmppClient.csproj.CopyComplete
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\Microsoft.Practices.Unity.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Debug\SmppClient.csprojAssemblyReference.cache
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Debug\SmppClient.csproj.CoreCompileInputs.cache
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Debug\SmppClient.csproj.CopyComplete
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\Microsoft.Practices.Unity.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\obj\Debug\SmppClient.csprojAssemblyReference.cache
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\obj\Debug\SmppClient.csproj.CoreCompileInputs.cache
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\obj\Debug\SmppClient.csproj.CopyComplete
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.dll
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\obj\Debug\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\ArdanStudios.Common.SmppClient.dll
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\ArdanStudios.Common.SmppClient.xml
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\Microsoft.Practices.ServiceLocation.dll
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\Microsoft.Practices.Unity.dll
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\Microsoft.Practices.Unity.Interception.dll
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Development\Yemenmobile 2021 plan\AAA Interface\sms_web\fourG\SmppClient\Microsoft.Practices.EnterpriseLibrary.Common.xml

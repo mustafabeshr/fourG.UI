@@ -1,0 +1,33 @@
+D:\Development\Rial Mobile\Binaries\ArdanStudios.Common.SmppClient.xml
+D:\Development\Rial Mobile\Binaries\ArdanStudios.Common.SmppClient.dll
+D:\Development\Rial Mobile\Binaries\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Rial Mobile\RMTransVS\SmppClient\obj\Release\SmppClient.csprojResolveAssemblyReference.cache
+D:\Development\Rial Mobile\RMTransVS\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.dll
+D:\Development\Rial Mobile\RMTransVS\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\Binaries\ArdanStudios.Common.SmppClient.xml
+D:\Development\123\VS\Binaries\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\Binaries\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\app\SmppClient\obj\Release\SmppClient.csprojResolveAssemblyReference.cache
+D:\Development\123\VS\app\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\app\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\Sender\Binaries\ArdanStudios.Common.SmppClient.xml
+D:\Development\123\VS\Sender\Binaries\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\Sender\Binaries\ArdanStudios.Common.SmppClient.pdb
+D:\Development\123\VS\Sender\app\SmppClient\obj\Release\SmppClient.csprojResolveAssemblyReference.cache
+D:\Development\123\VS\Sender\app\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.dll
+D:\Development\123\VS\Sender\app\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Private\NT\YCo.VTU\Binaries\ArdanStudios.Common.SmppClient.xml
+D:\Development\Private\NT\YCo.VTU\Binaries\ArdanStudios.Common.SmppClient.dll
+D:\Development\Private\NT\YCo.VTU\Binaries\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Release\SmppClient.csprojAssemblyReference.cache
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Release\SmppClient.csproj.CoreCompileInputs.cache
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Release\SmppClient.csproj.CopyComplete
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.dll
+D:\Development\Private\NT\YCo.VTU\Yvtu\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\Binaries\ArdanStudios.Common.SmppClient.xml
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\Binaries\ArdanStudios.Common.SmppClient.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\Binaries\ArdanStudios.Common.SmppClient.pdb
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Release\SmppClient.csproj.CoreCompileInputs.cache
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Release\SmppClient.csproj.CopyComplete
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.dll
+D:\Development\Yemenmobile 2021 plan\نظام تتبع سير المعاملة\MessagingModule\SmppClient\obj\Release\ArdanStudios.Common.SmppClient.pdb
