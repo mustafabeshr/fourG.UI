@@ -1,0 +1,131 @@
+﻿@page "/outgoingsms"
+
+@inject IAppDbContext _db
+
+<AuthorizeView>
+    <Authorized>
+
+        <center>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control col-12 text-center" @bind-value="@mobileNo" placeholder="الرقم"
+                           style="font-size:18px;font-weight:bold;color:maroon;font-family:Arial, Helvetica, sans-serif" />
+                    @if (!string.IsNullOrEmpty(validationMessage))
+                    {
+                        <span class="col-md-12  alert alert-danger">@validationMessage</span>
+                    }
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control col-12 text-center" @bind-value="@searchText" placeholder="نص الرسالة"
+                           style="font-size:18px;font-weight:bold;color:maroon;" />
+                </div>
+                <div class="col-md-1">
+                    @if (!showLoadingIcon)
+                    {
+                        <button type="submit" @onclick="@SearchIssues" class="btn btn-outline-danger"
+                                style="width:100%;border-radius:18px;">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    }
+                    else
+                    {
+                        <img src="/images/Spinner-2.gif" width="30px" height="30px" />
+                    }
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </center>
+        @if (hasData)
+        {
+            <table class="table table-hover mt-2">
+                <thead style="background-color:maroon;color:white;">
+                    <tr style="font-size:13px;">
+                        <td>الرقم</td>
+                        <td>الرسالة</td>
+                        <td>رقم الخدمة</td>
+                        <td>تاريخ الانشاء</td>
+                        <td>تاريخ الارسال</td>
+                        <td>م</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var message in messages)
+                    {
+                        <tr style="font-size:13px;">
+                            <td style="font-size:16px;font-family:Arial, Helvetica, sans-serif">@message.MobileNo</td>
+                            <td>@message.Message</td>
+                            <td style="font-size:16px;font-family:Arial, Helvetica, sans-serif">@message.Shortcode</td>
+                            <td>@message.CreatedOn</td>
+                            <td>
+                                @if (message.BackedupOn == DateTime.MinValue)
+                                {
+                                    <span style="color:gray;font-weight:bold;">قيد الارسال</span>
+                                }
+                                else
+                                {
+                                    @message.BackedupOn
+                                }
+                            </td>
+                            <td>@message.Id</td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        
+        }
+        else
+        {
+            if (showBanIcon)
+            {
+                <div class="mt-4  text-center">
+                    <i class="fas fa-ban fa-5x" style="color:gray;margin:auto;"></i>
+                </div>
+            }
+        }
+
+    </Authorized>
+</AuthorizeView>
+
+
+@code {
+    private string mobileNo;
+    private string searchText;
+    private string validationMessage = string.Empty;
+    private bool hasData = false;
+    private bool showBanIcon = false;
+    private bool showLoadingIcon = false;
+    private List<MessageSpoolHistory> messages = new List<MessageSpoolHistory>();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        showBanIcon = false;
+    }
+    async Task SearchIssues()
+    {
+        try
+        {
+            showLoadingIcon = true;
+
+            messages = await new MessageSpoolHistoryRepo(_db).GetAllListAsync(searchText, mobileNo);
+            //Thread.Sleep(3000);
+            if (messages != null)
+            {
+                hasData = true;
+            }
+            else { hasData = false; showBanIcon = true; }
+        }
+        catch (NullReferenceException)
+        {
+            hasData = false;
+            showBanIcon = true;
+            return;
+        }
+        finally
+        {
+            showLoadingIcon = false;
+        }
+    }
+}

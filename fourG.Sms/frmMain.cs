@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using fourG.Infra;
+using fourG.Infra.Interfaces;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +15,13 @@ namespace fourG.Sms
     {
         private int childFormNumber = 0;
         private readonly IConfiguration configuration;
+        private readonly IAppDbContext _db;
 
-        public frmMain(IConfiguration configuration)
+        public frmMain(IConfiguration configuration, IAppDbContext db)
         {
             InitializeComponent();
             this.configuration = configuration;
+            this._db = db;
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -28,7 +32,7 @@ namespace fourG.Sms
             childForm.Show();
         }
 
-        private void ShowSettingsForm(object sender, EventArgs e)
+        private async void ShowSettingsForm(object sender, EventArgs e)
         {
             if (IsFormAlreadyLoaded("frmSettings") == true)
             {
@@ -37,6 +41,7 @@ namespace fourG.Sms
 
             frmSettings frm = new frmSettings(configuration);
             frm.MdiParent = this;
+            frm.Tag = "frmSettings";
             frm.Text = "Settings";
             frm.Show();
         }
@@ -50,7 +55,7 @@ namespace fourG.Sms
                 return;
             }
 
-            frmSMSCInterface frm = new frmSMSCInterface(configuration, sender.ToString(), sender.ToString().Substring(0,1));
+            frmSMSCInterface frm = new frmSMSCInterface(configuration, sender.ToString(), sender.ToString().Substring(0,1), _db);
             frm.Tag = frmTag;
             frm.MdiParent = this;
             frm.Text = sender.ToString();

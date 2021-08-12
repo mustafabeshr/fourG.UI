@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.web\\fourG.web.csproj": {}
+    "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Web\\fourG.Web.csproj": {}
   },
   "projects": {
-    "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.web\\fourG.web.csproj": {
+    "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Web\\fourG.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.web\\fourG.web.csproj",
-        "projectName": "fourG.web",
-        "projectPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.web\\fourG.web.csproj",
+        "projectUniqueName": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Web\\fourG.Web.csproj",
+        "projectName": "fourG.Web",
+        "projectPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Web\\fourG.Web.csproj",
         "packagesPath": "C:\\Users\\mbeshr\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.web\\obj\\",
+        "outputPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Blazored.SessionStorage": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

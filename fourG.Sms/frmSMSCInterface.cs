@@ -1,4 +1,7 @@
 ﻿using ArdanStudios.Common.SmppClient;
+using fourG.Data;
+using fourG.Infra;
+using fourG.Infra.Interfaces;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -15,6 +18,7 @@ namespace fourG.Sms
     {
         private readonly IConfiguration _configuration;
         private readonly string _interfaceType;
+        private readonly IAppDbContext _db;
         private readonly SMSCReceiverSettings receiverSettings;
         private readonly SMSCSenderSettings senderSettings;
         private string SMSCShortcode;
@@ -27,11 +31,12 @@ namespace fourG.Sms
         private bool isReadyToLoadMessagesFromDb = true;
 
         ESMEManager connectionManager;
-        public frmSMSCInterface(IConfiguration configuration, string title, string interfaceType)
+        public frmSMSCInterface(IConfiguration configuration, string title, string interfaceType, IAppDbContext db)
         {
             InitializeComponent();
             _configuration = configuration;
             this._interfaceType = interfaceType;
+            this._db = db;
             receiverSettings = new SMSCReceiverSettings();
             senderSettings = new SMSCSenderSettings();
             configuration.GetSection("SmscSettings:Receiver").Bind(receiverSettings);
@@ -133,12 +138,18 @@ namespace fourG.Sms
             }
         }
 
-        private void receivedMessageHandler(string logKey, string serviceType, Ton sourceTon, Npi sourceNpi, string shortLongCode, DateTime dateReceived, string phoneNumber, DataCodings dataCoding, string message)
+        private async void receivedMessageHandler(string logKey, string serviceType, Ton sourceTon, Npi sourceNpi, string shortLongCode, DateTime dateReceived, string phoneNumber, DataCodings dataCoding, string message)
         {
-            AddLogAsync(phoneNumber, message, "IN", shortLongCode, "ReceivedMessageHandler", Color.Blue);
+            await AddLogAsync(phoneNumber, message, "IN", shortLongCode, "ReceivedMessageHandler", Color.Blue);
             if (!string.IsNullOrEmpty(message))
             {
-               
+                var receivedSMS = new SMSReceiver
+                {
+                    MobileNo = phoneNumber,
+                    Shortcode = shortLongCode,
+                    Message = message
+                };
+                var result = await new SMSReceiverRepo(_db).Create(receivedSMS);
             }
         }
 
@@ -243,19 +254,16 @@ namespace fourG.Sms
             timer1.Start();
         }
 
-        private void SendGeneratedMessages()
+        private async void SendGeneratedMessages()
         {
             int sendResult = 0;
             isReadyToLoadMessagesFromDb = false;
-            AddLogAsync("SYS", "Try to load messages from database", "", "", "Load Messages", Color.Purple);
-            var messages = new List<string>
-            {
-                "Hello","Hello Mustafa"
-            };// get messages from database
+            await AddLogAsync("SYS", "Try to load messages from database", "", "", "Load Messages", Color.Purple);
+            var messages = await new MessageSpoolRepo(_db).GetListAsync(0, string.Empty, 0);// get messages from database
             if (messages != null && messages.Count > 0)
             {
-                AddLogAsync("SYS", $"Load {messages.Count} messages", "", "", "Load Messages", Color.Purple);
-                foreach (var message in messages)
+                await AddLogAsync("SYS", $"Load {messages.Count} messages", "", "", "Load Messages", Color.Purple);
+                foreach (var msg in messages)
                 {
                         if (lblSendTime.InvokeRequired)
                         {
@@ -269,21 +277,21 @@ namespace fourG.Sms
                     SubmitSmResp submitSmResp = null;
                     List<SubmitSm> submitSmList = null;
                     List<SubmitSmResp> submitSmRespList = null;
-                    if (message.Length <= 70)
+                    if (msg.Message.Length <= 70)
                     {
-                        sendResult = connectionManager.SendMessage("777010055", null, Ton.Unknown, Npi.Unknown, DataCodings.UCS2
-                                       , DataCodings.UCS2, message, out submitSm, out submitSmResp);
+                        sendResult = connectionManager.SendMessage(msg.MobileNo, null, Ton.Unknown, Npi.Unknown, DataCodings.UCS2
+                                       , DataCodings.UCS2, msg.Message, out submitSm, out submitSmResp);
                     }
                     else
                     {
-                        sendResult = connectionManager.SendMessageLarge("777010055", null, Ton.Unknown, Npi.Unknown, DataCodings.UCS2
-                                      , DataCodings.UCS2, message, out submitSmList, out submitSmRespList);
+                        sendResult = connectionManager.SendMessageLarge(msg.MobileNo, null, Ton.Unknown, Npi.Unknown, DataCodings.UCS2
+                                      , DataCodings.UCS2, msg.Message, out submitSmList, out submitSmRespList);
                     }
-                    AddLog(message, message, "OUT", SMSCShortcode, (sendResult == 0 ? "Success" : "Fail"),
+                    AddLog(msg.MobileNo, msg.Message, "OUT", SMSCShortcode, (sendResult == 0 ? "Success" : "Fail"),
                         (sendResult == 0 ? Color.Black : Color.Red));
                     if (sendResult == 0)
                     {
-                        // remove message from message pool 
+                        await new MessageSpoolRepo(_db).Remove(msg.Id);
                     }
                 }
             } else

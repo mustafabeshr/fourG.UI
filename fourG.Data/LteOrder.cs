@@ -16,10 +16,10 @@ namespace fourG.Data
         public int Postpaid { get; set; }
         public string IMSI { get; set; }
         public string IMSIPassword { get; set; }
-        public SubscriberPackage Package { get; set; }
-        public SubscriberPackage AlterPackageId { get; set; }
+        public string PackageId { get; set; }
+        public string AlterPackageId { get; set; }
         public int PackageValidity { get; set; }
-        public MobileOffer Offer { get; set; }
+        public string OfferId { get; set; }
         public int Status { get; set; }
         public int AAAStatus { get; set; }
         public int PRLStatus { get; set; }

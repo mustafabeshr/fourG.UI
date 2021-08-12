@@ -4,14 +4,14 @@
     "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\fourG.Infra.csproj": {}
   },
   "projects": {
-    "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\fourG.Infra.csproj": {
+    "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Data\\fourG.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\fourG.Infra.csproj",
-        "projectName": "fourG.Infra",
-        "projectPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\fourG.Infra.csproj",
+        "projectUniqueName": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Data\\fourG.Data.csproj",
+        "projectName": "fourG.Data",
+        "projectPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Data\\fourG.Data.csproj",
         "packagesPath": "C:\\Users\\mbeshr\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\obj\\",
+        "outputPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,89 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\fourG.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\fourG.Infra.csproj",
+        "projectName": "fourG.Infra",
+        "projectPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\fourG.Infra.csproj",
+        "packagesPath": "C:\\Users\\mbeshr\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mbeshr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Data\\fourG.Data.csproj": {
+                "projectPath": "D:\\Development\\Yemenmobile 2021 plan\\AAA Interface\\sms_web\\fourG\\fourG.Data\\fourG.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

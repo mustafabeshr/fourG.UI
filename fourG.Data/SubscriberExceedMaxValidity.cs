@@ -10,7 +10,8 @@ namespace fourG.Data
     {
         public int Id { get; set; }
         public string MobileNo { get; set; }
-        public SubscriberPackage Package { get; set; }
+        public string PackageId { get; set; }
+        public string PackageName { get; set; }
         public int OperationType { get; set; }
         public DateTime CreatedOn { get; set; }
     }

@@ -1,0 +1,57 @@
+﻿@page "/index"
+
+
+<AuthorizeView>
+    <Authorized>
+
+        <center>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="/subscriber" style="text-decoration: none;">
+                                <div class="pt-2  m-auto text-center MainLink">
+                                    <i class="fas fa-user-tie fa-3x" style="color:maroon;"></i>
+                                    <br /> المشترك
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/products" style="text-decoration: none;">
+                                <div class="pt-2  m-auto text-center MainLink">
+                                    <i class="fas fa-gifts fa-3x" style="color:maroon;"></i>
+                                    <br /> العروض
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/receive" style="text-decoration: none;">
+                                <div class="pt-2  m-auto text-center MainLink">
+                                    <i class="fas fa-inbox fa-3x" style="color:maroon;"></i>
+                                    <br /> الرسائل الواردة
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/outgoingsms" style="text-decoration: none;">
+                                <div class="pt-2  m-auto text-center MainLink">
+                                    <i class="fas fa-paper-plane fa-3x" style="color:maroon;"></i>
+                                    <br /> الرسائل الصادرة
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+                
+            </div>
+        </center>
+
+    </Authorized>
+    <NotAuthorized>
+        You are not authorized
+    </NotAuthorized>
+</AuthorizeView>
+
+

@@ -1,0 +1,114 @@
+﻿@page "/"
+
+@using fourG.UI.Data.Interfaces
+
+@inject IAppDbContext context
+@inject IAppOperator userRepo
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider authenticationStateProvider
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorageService
+
+
+
+<EditForm Model="@appOperator" OnValidSubmit="@ValidateUser">
+    <DataAnnotationsValidator />
+    <div>
+        <br /><br /><br /><br /><br />
+    </div>
+    <div>
+        <h5 style=" color: purple; font-family: 'DroidKufi-Bold'">نظام الفوترة السريع</h5>
+    </div>
+    <div>
+        <br />
+    </div>
+    <div class="col-12 row">
+        <InputText class="form-control col-12" @bind-Value="@appOperator.Id" placeholder="رمز المستخدم" />
+        <ValidationMessage For="() => appOperator.Id" />
+    </div>
+    <br />
+    <div class="col-12 row">
+        <InputText type="password" class="form-control col-12" @bind-Value="@appOperator.Secret" placeholder="الرقم السري" />
+        <ValidationMessage For="() => appOperator.Secret" />
+    </div>
+    <br />
+    <div class="col-12 row">
+        <span class="col-12"></span>
+        <input type="submit" class="form-control col-md-12 btn btn-outline-primary" value="دخول" style="font-family: 'DroidKufi-Bold'" />
+    </div>
+    <br />
+    <div class="col-12 row" style="text-align:right; font-weight:bold; color:red;">
+        <span class="col-md-12  @messageClass">@LoginMesssage</span>
+    </div>
+</EditForm>
+@code{
+
+    private LoginDto appOperator;
+    public string LoginMesssage { get; set; }
+    public string messageClass { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+
+        appOperator = new LoginDto();
+        return base.OnInitializedAsync();
+    }
+    void Navigate()
+    {
+        NavigationManager.NavigateTo("/index");
+    }
+
+    private async Task<bool> ValidateUser()
+    {
+
+        var dbOperator = await userRepo.GetSingleAsync(appOperator.Id);
+        if (dbOperator == null)
+        {
+            messageClass = "alert alert-danger";
+            LoginMesssage = "المستخدم غير موجود";
+            return false;
+        }
+        else if (dbOperator.Status != 1)
+        {
+            messageClass = "alert alert-danger";
+            LoginMesssage = "بسبب حالة الحساب لا يمكنك الدخول للنظام";
+            return false;
+        }
+        else if (dbOperator.LockedTo > DateTime.Now)
+        {
+            messageClass = "alert alert-danger";
+            LoginMesssage = $"عذرا ، حسابك متوقف مؤقتا لمدة  {AppSecurity.HowMuchLeftTime(dbOperator.LockedTo)}";
+            return false;
+        }
+        try
+        {
+            //byte[] salt = Pbkdf2Hasher.GenerateRandomSalt();
+            //string hash = Pbkdf2Hasher.ComputeHash(appOperator.Secret, salt);
+            //var newSalt = Convert.ToBase64String(salt);
+
+            byte[] salt = Convert.FromBase64String(dbOperator.SecretKey);
+            string hash = Pbkdf2Hasher.ComputeHash(appOperator.Secret, salt);
+
+            if (dbOperator.Secret != hash)
+            {
+                messageClass = "alert alert-danger";
+                await userRepo.IncreaseWrongPwdAttempts(dbOperator.Id, ++dbOperator.Attempts);
+                LoginMesssage = $"عذرا ، رمز المستخدم او الرقم السري غير صحيح {dbOperator.Attempts}";
+                return false;
+            }
+
+            await userRepo.PreSuccessLogin(dbOperator.Id);
+
+            await ((CustomAuthenticationStateProvider)authenticationStateProvider).MarkUserAsAuthenticated(dbOperator);
+            NavigationManager.NavigateTo("/index");
+
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            messageClass = "alert alert-danger";
+            LoginMesssage = $"عذرا ، لايمكنك الدخول للنظام في الوقت الحالي";
+            return false;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+﻿@inherits LayoutComponentBase
+
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+
+<div class="main">
+    <div class="top-row px-4">
+
+        <AuthorizeView>
+            <Authorized>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <a href="/index" class="brand-link" style="text-decoration: none;font-size:18px;">
+                                <img src="/images/AppLogo.jpg" alt="4G" class="brand-image" width="70" height="50" style="opacity: .8">
+                                <span class="brand-text font-weight-light" font-size:1.5em;color:purple;">نظام الفوترة السريع</span>
+                            </a>
+                        </div>
+                        <div class="col-md-3 float-left">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a href="/" data-toggle="tooltip" data-placement="bottom" title="تسجيل خروج" @onclick="(() => Logout())">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </a>
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <p>@context.User.Identity.Name</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="/" data-toggle="tooltip" data-placement="bottom" title="تغيير الرقم السري">
+                                        <i class="fas fa-key"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Authorized>
+            <NotAuthorized>
+                <a href="/">Login</a>
+            </NotAuthorized>
+        </AuthorizeView>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+
+@code{ public async Task Logout()
+    {
+        await ((CustomAuthenticationStateProvider)AuthenticationStateProvider).MarkUserAsLoggedOut();
+        NavigationManager.NavigateTo("");
+    } }
+
+

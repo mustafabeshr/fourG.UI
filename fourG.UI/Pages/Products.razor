@@ -1,0 +1,54 @@
+﻿@page "/products"
+
+@inject IAppDbContext _db
+
+<AuthorizeView>
+    <Authorized>
+        <center>
+
+            <div class="row">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>م</th>
+                            <th>ID 1</th>
+                            <th>ID 2</th>
+                            <th>الاسم</th>
+                            <th>التكلفة</th>
+                            <th>الحجم</th>
+                            <th>الفترة</th>
+                            <th>Prepaid</th>
+                            <th>Postpaid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in products)
+                        {
+                            <tr>
+                                <td>@product.Id</td>
+                                <td>@product.FirstId</td>
+                                <td>@product.SecondId</td>
+                                <td>@product.Name</td>
+                                <td>@product.Fee</td>
+                                <td>@product.Size</td>
+                                <td>@product.Validity</td>
+                                <td>@product.PrepaidOfferId</td>
+                                <td>@product.PostpaidOfferId</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </center>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    private List<Product> products =  new List<Product>();
+
+        protected override async Task OnInitializedAsync()
+        {
+            products = await new ProductRepo(_db).GetListAsync(-1, string.Empty, string.Empty);
+        }
+
+}

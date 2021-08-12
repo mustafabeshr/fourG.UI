@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\fourG.Infra\fourG.Infra.csproj" />
     <ProjectReference Include="..\SmppClient\SmppClient.csproj" />
   </ItemGroup>
 

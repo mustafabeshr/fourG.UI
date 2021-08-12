@@ -15,7 +15,8 @@ namespace fourG.Data
         public DateTime ExpiredOn { get; set; }
         public int Status { get; set; }
         public DateTime LastPackageOn { get; set; }
-        public SubscriberPackage LastPackage { get; set; }
+        public string LastPackageId { get; set; }
+        public string LastPackageName { get; set; }
         public int AAAStatus { get; set; }
         public int HSSStatus { get; set; }
     }

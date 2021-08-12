@@ -1,0 +1,54 @@
+﻿
+@inject IAppDbContext _db
+
+<table class="table table-hover">
+    <thead class="thead-light">
+        <tr>
+            <td>الرقم</td>
+            <td>الباقة</td>
+            <td>الحالة</td>
+            <td>AAA</td>
+            <td>HSS</td>
+            <td>CRM</td>
+            <td>PRL</td>
+            <td>تاريخ الانشاء</td>
+            <td>تاريخ الانتهاء</td>
+            <td>القناة</td>
+            <td>ID</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in orders)
+        {
+            <tr>
+                <td>@order.MobileNo</td>
+                <td>@order.PackageName</td>
+                <td>@order.Status</td>
+                <td>@order.AAAStatus</td>
+                <td>@order.HSSStatus</td>
+                <td>@order.CRMStatus</td>
+                <td>@order.PRLStatus</td>
+                <td>@order.CreatedOn</td>
+                <td>@order.ClosedOn</td>
+                <td>@order.Channel</td>
+                <td>@order.Id</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+
+
+@code {
+    [Parameter]
+    public string mobileNo { get; set; }
+    private List<LteOrder> orders = new List<LteOrder>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        orders = await new LteOrderRepo(_db).GetListAsync(mobileNo, string.Empty, string.Empty, -1, 5, "DESC");
+    }
+
+}

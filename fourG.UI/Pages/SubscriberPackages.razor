@@ -1,0 +1,34 @@
+﻿
+@inject IAppDbContext _db
+
+@foreach (var p in packages)
+{
+<div class="row">
+    <div class="col-md-4">
+        <p>@p.PackageName</p>
+    </div>
+    <div class="col-md-4">
+        <p>@p.StartedOn</p>
+    </div>
+    <div class="col-md-4">
+        <p>@p.ExpiredOn</p>
+    </div>
+</div>
+    
+    <hr />
+    
+}
+
+@code {
+
+    [Parameter]
+    public string mobileNo { get; set; }
+    private List<SubscriberPackage> packages = new List<SubscriberPackage>();
+
+        protected override async Task OnInitializedAsync()
+        {
+           packages = await new SubcriberPackagesRepo(_db).GetListAsync(mobileNo);
+        }
+
+
+}

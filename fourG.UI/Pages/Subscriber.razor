@@ -1,0 +1,168 @@
+﻿@page "/subscriber"
+
+@using System.Threading
+
+@inject IAppDbContext _db
+
+<AuthorizeView>
+    <Authorized>
+        <center>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control col-12 text-center" @bind-value="@mobileNo" placeholder="الرقم"
+                           style="font-size:18px;font-weight:bold;color:maroon;font-family:Arial, Helvetica, sans-serif" />
+                    @if (!string.IsNullOrEmpty(validationMessage))
+                    {
+                        <span class="col-md-12  alert alert-danger">@validationMessage</span>
+                    }
+                </div>
+                <div class="col-md-1">
+                    @if (!showLoadingIcon)
+                    {
+                        <button type="submit" @onclick="@SearchIssues" class="btn btn-outline-danger"
+                                style="width:100%;border-radius:18px;">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    }
+                    else
+                    {
+                        <img src="/images/Spinner-2.gif" width="30px" height="30px" />
+                    }
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </center>
+
+        @if (hasData)
+        {
+            <div class="mt-4 CustomBox">
+                <div class="row">
+                    <div class="col-md-2"><label class="FormLabel">الرقم :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.MobileNo</div>
+                    <div class="col-md-2"><label class="FormLabel">الشريحة :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.IMSI</div>
+                    <div class="col-md-2"><label class="FormLabel">تاريخ الاشتراك :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.RegisteredOn</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><label class="FormLabel">تايخ انتهاء الاشتراك :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.ExpiredOn</div>
+                    <div class="col-md-2"><label class="FormLabel">الحالة :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.Status</div>
+                    <div class="col-md-2"><label class="FormLabel">تاريخ آخر باقة :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.LastPackageOn</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"><label class="FormLabel">رقم آخر باقة :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.LastPackageId</div>
+                    <div class="col-md-2"><label class="FormLabel">AAA :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.AAAStatus</div>
+                    <div class="col-md-2"><label class="FormLabel">HSS :</label></div>
+                    <div class="col-md-2 FormDataBold">@subscriber.HSSStatus</div>
+                </div>
+            </div>
+
+            <div class="row mt-2 justify-content-center" style="padding:5px;">
+                <div class="row">
+                    <div class="col-md-12" style="margin-left:10px;padding:5px;text-align:center;
+                        background-color:maroon;color:white;border-radius:15px;margin-bottom:5px;">الباقات الفعالة</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-left:10px;">
+                        <SubscriberPackages mobileNo="@subscriber.MobileNo"></SubscriberPackages>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" style="padding:5px;">
+                <div class="row">
+                    <div class="col-md-12" style="padding:5px;text-align:center;
+                        background-color:maroon;color:white;border-radius:15px;margin-bottom:5px;">
+                        آخر
+                        <span style="font-weight:bold"> 5 </span>
+                        طلبات
+                        <span style="font-weight:bold;color:white;font-size:18px;"> قيد الانتظار </span>
+                    </div>
+                    <div class="col-md-12">
+                        <SubscriberOrders mobileNo="@subscriber.MobileNo"></SubscriberOrders>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center" style="padding:5px;">
+                <div class="row">
+                    <div class="col-md-12" style="padding:5px;text-align:center;
+                        background-color:maroon;color:white;border-radius:15px;margin-bottom:5px;">
+                        آخر
+                        <span style="font-weight:bold"> 10 </span>
+                        طلبات
+                        <span style="font-weight:bold;color:white;font-size:18px;"> تاريخية </span>
+                    </div>
+                    <div class="col-md-12">
+                        <SubscriberOrderHistory mobileNo="@subscriber.MobileNo"></SubscriberOrderHistory>
+                    </div>
+                </div>
+
+            </div>
+        }
+        else
+        {
+            if (showBanIcon)
+            {
+                <div class="mt-4  text-center">
+                    <i class="fas fa-ban fa-5x" style="color:gray;margin:auto;"></i>
+                </div>
+            }
+        }
+
+
+
+    </Authorized>
+</AuthorizeView>
+
+
+@code {
+    private string mobileNo;
+    private string validationMessage = string.Empty;
+    private bool hasData = false;
+    private bool showBanIcon = false;
+    private bool showLoadingIcon = false;
+    private fourG.UI.Data.Entities.Subscriber subscriber = new Data.Entities.Subscriber();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        showBanIcon = false;
+    }
+    async Task SearchIssues()
+    {
+        try
+        {
+            showLoadingIcon = true;
+
+            if (string.IsNullOrEmpty(mobileNo))
+            {
+                return;
+            }
+            subscriber = await new SubscriberRepo(_db).GetSingleByMobileAsync(mobileNo);
+            //Thread.Sleep(3000);
+            if (subscriber != null)
+            {
+                hasData = true;
+            }
+            else { hasData = false; showBanIcon = true; }
+        }
+        catch (NullReferenceException)
+        {
+            hasData = false;
+            showBanIcon = true;
+            return;
+        }
+        finally
+        {
+            showLoadingIcon = false;
+        }
+    }
+}

@@ -1,3 +1,5 @@
+using fourG.Infra;
+using fourG.Infra.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -55,6 +57,7 @@ namespace fourG.Sms
         private static void ConfigureServices(IConfiguration configuration,
             IServiceCollection services)
         {
+            services.AddSingleton<IAppDbContext, AppDbContext>();
             services.AddScoped<frmMain>();
         }
     }
